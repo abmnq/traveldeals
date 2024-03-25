@@ -6,8 +6,8 @@ This is a Google Cloud Function triggered by a PubSub message to the topic `trav
 **Ensure you have an active Google Cloud Project**
 ```
 gcloud functions deploy write_subscriber \
---entry-point YOUR_ENTRY_POINT_HERE \
+--entry-point SubscriberFB \
 --runtime nodejs18 \
---trigger-event=providers/cloud.pubsub/eventTypes/topic.publish \
 --trigger-topic=travel_deals_signup
+
 ```
