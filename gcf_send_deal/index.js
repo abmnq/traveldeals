@@ -42,7 +42,7 @@ exports.sendDealNotification = async (event, context) => {
       const msg = {
         to: subscriberEmail,
         from: process.env.SENDGRID_SENDER,
-        subject: `Ahmed ${headline}`,
+        subject: `Ahmoha ${headline}`,
         text: `A new travel deal has been posted for the following locations: ${locations.join(', ')}`,
         html: `<p>A new travel deal has been posted for the following locations: <strong>${locations.join(', ')}</strong></p>`,
       };

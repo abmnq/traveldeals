@@ -1,5 +1,15 @@
 {
-    "dependencies": {
-      "@google-cloud/firestore": "^7.4.0"
-    }
-  }
+  "dependencies": {
+    "@google-cloud/firestore": "^7.5.0"
+  },
+  "name": "gcf_write_subscriber",
+  "description": "This is a Google Cloud Function triggered by a PubSub message to the topic `travel_deals_signup`. It will write a new subscriber to the `subscribers` collection in your default Firestore database.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -11,7 +11,7 @@
 
       <label for='phone_number'>Input your phone number:</label><br />
       <input type='text' name='phone_number' /><br />
-
+      
       <label for='travel_regions'>Select the regions you want to watch:</label><br />
       <input type='checkbox' name='watch_region' value='Africa' /> Africa<br />
       <input type='checkbox' name='watch_region' value='Australia' /> Australia<br />
@@ -19,8 +19,13 @@
       <input type='checkbox' name='watch_region' value='Europe' /> Europe<br />
       <input type='checkbox' name='watch_region' value='North America' /> North America<br />
       <input type='checkbox' name='watch_region' value='South America' /> South America<br />
+      
+      <div class="marketing-agreement">
+        <input type='checkbox' name='agree_marketing' required />
+        <label for='agree_marketing'>
+          I agree to receive marketing and promotional SMS and emails from +18556082188. Msg and data rates may apply. Reply STOP to opt out or HELP for help.
+        </label>
+      </div>
+      
       <input type='submit' />
     </form>
-  </div>
-</body>
-</html>

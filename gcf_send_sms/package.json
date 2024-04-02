@@ -1,0 +1,17 @@
+{
+  "name": "gcf_send_sms",
+  "version": "1.0.0",
+  "description": "This is a Google Cloud Function triggered by a new document in the `subscribers` collection in your default Firestore database. It will generate a welcome SMS message to the user by using the Twilio API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/firestore": "^7.5.0",
+    "dotenv": "^16.4.5",
+    "twilio": "^5.0.2"
+  }
+}
