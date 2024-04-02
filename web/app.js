@@ -21,13 +21,16 @@ app.get('/', (req, res) => {
 app.post('/subscribe', async (req, res) => {
   const email = req.body.email_address;
   const regions = req.body.watch_region;
+  const phoneNumber = req.body.phone_number;
 
 const pubSubClient = new PubSub();
 
 const message_data = JSON.stringify({
   email_address: email,
-  watch_region: regions
+  watch_region: regions,
+  phone_number: phoneNumber,
 });
+
 
 const dataBuffer = Buffer.from(message_data);
 //publish message

@@ -9,7 +9,8 @@ exports.SubscriberFB = async (message, context) =>{
     const parsedMsg = JSON.parse(incoming);
     const subscriberData = {
         email_address: parsedMsg.email_address,
-        watch_regions: parsedMsg.watch_region
+        watch_regions: parsedMsg.watch_region,
+        phone_number: parsedMsg.phone_number,
     };
     let collectionRef = firestore.collection('subscribers');
     const docRef = await collectionRef.add(subscriberData);
